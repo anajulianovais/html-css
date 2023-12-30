@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em html 5</title>
+</head>
+<body>
+<h1>Imagem dinâmica</h1>
+<p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagen flexível">
+</picture>
+
+<h1>Reproduzindo áudio</h1>
+<p>Vamos aprender a reproduzir áudios em html 5</p>
+<strong>mazelando.mp3</strong> <br>
+
+<!--<audio src="midia/mazelando.mp3" controls></audio>-->
+
+<audio preload="metadata" controls loop>
+<source src="midia/mazelando.mp3" type="audio/mpeg">
+<source src="midia/mazelando.ogg" type="audio/ogg">
+<source src="midia/mazelando.wav" type="audio/wav">
+<p>Infelizmente o seu navegador não consegue reproduzir áudio. 
+    <a href="midia/mazelando.mp3">Clique aqui</a> para baixar o arquivo MP3.
+</p>
+</audio>
+
+<h1>Inserindo vídeos hospedados localmente</h1>
+<!--<video src="midia/Alex.mp4" width="500" controls></video>-->
+<!--a tag poster permite colocar uma capa no vídeo-->
+<video width="500" controls>
+    <source src="midia/Alex.mp4" type="video/mp4">
+    <source src="midia/Alex.m4v" type="video/mp4">
+    <source src="midia/Alex.webm" type="video/webm">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+</video>
+<h1>Inserindo vídeos hospedados externamente</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h7MYJghRWt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
