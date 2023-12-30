@@ -14,7 +14,7 @@
 <strong>Módulo 03</strong> <br>
 <a href="https://anajulianovais.github.io/html-css/Curso%20em%20V%C3%ADdeo/Projetos/desafio%2012%20(efeito%20parallax)/index.html" target="_blank">Desafio 12 - efeito parallax</a> <br>
 <a href="https://anajulianovais.github.io/html-css/Curso%20em%20V%C3%ADdeo/Projetos/desafio%2013%20(tabelas)/index.html" target="_blank">Desafio 13 - tabelas</a> <br>
-<a href="https://juliaboaskivisk.github.io/html-css/Curso%20em%20V%C3%ADdeo/Projetos/desafio%2014%20(mais%20uma%20tabela)" target="_blank">Desafio 14 - mais uma tabela</a>
+<a href="https://anajulianovais.github.io/html-css/Curso%20em%20V%C3%ADdeo/Projetos/desafio%2014%20(mais%20uma%20tabela)" target="_blank">Desafio 14 - mais uma tabela</a>
 
 <strong>Módulo 04</strong> <br>
 <a href="https://anajulianovais.github.io/html-css/Curso%20em%20V%C3%ADdeo/Projetos/desafio%2015%20(projeto%20social)" target="_blank">Desafio 15 - projeto social</a> <br>
