@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Redes Sociais</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url(imagens/fundo-madeira.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        main {
+            position: relative;
+            height: 100vh;
+        }
+
+        #telefone {
+            background-image: url(imagens/frame-iphone.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            max-width: 313px;
+            height: 70vh;
+        }
+
+        iframe {
+            position: relative;
+            top: 12.5%;
+            left: 7%;
+
+            width: 85%;
+            height: 75%;
+        }
+
+        #social {
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 8vh;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+        <main>
+            <section id="telefone">
+                    <iframe src="home.html" name="tela"></iframe>
+            </section>
+            
+            <section id="social">
+                <a href="home.html" target="tela">
+                    <img src="imagens/logo-home.jpg" alt="">
+                </a> <br>
+
+                <a href="youtube.html" target="tela">
+                    <img src="imagens/logo-youtube.jpg" alt="">
+                </a> <br>
+
+                <a href="github.html" target="tela">
+                    <img src="imagens/logo-github.jpg" alt="">
+                </a> <br>
+
+                <a href="instagram.html" target="tela">
+                    <img src="imagens/logo-instagram.jpg" alt="">
+                </a> <br>
+
+                <a href="twitter.html" target="tela">
+                    <img src="imagens/logo-twitter.jpg" alt="">
+                </a> <br>
+
+                <a href="facebook.html" target="tela">
+                    <img src="imagens/logo-facebook.jpg" alt="">
+                </a>
+            </section>
+        </main>
+</body>
+</html>

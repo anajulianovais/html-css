@@ -17,6 +17,7 @@
 <a href="https://anajulianovais.github.io/html-css/Curso%20em%20V%C3%ADdeo/Projetos/desafio%2014%20(mais%20uma%20tabela)" target="_blank">Desafio 14 - mais uma tabela</a>
 
 <strong>Módulo 04</strong> <br>
-<a href="https://anajulianovais.github.io/html-css/Curso%20em%20V%C3%ADdeo/Projetos/desafio%2015%20(projeto%20social)" target="_blank">Desafio 15 - projeto social</a> <br>
+<a href="https://anajulianovais.github.io/html-css/Curso%20em%20V%C3%ADdeo/Projetos/desafio%2015%20(projeto%20social)/iframe.html" target="_blank">Desafio 15 - projeto social</a> <br>
+<a href="https://anajulianovais.github.io/html-css/Curso%20em%20V%C3%ADdeo/Projetos/desafio%2015%20(projeto%20social)/responsivo.html" target="_blank">Desafio 15 - projeto social (responsivo)</a> <br>
 <a href="https://anajulianovais.github.io/html-css/Curso%20em%20Vídeo/Projetos/projeto%2016%20(tela%20de%20login)/index.html" target="_blank">Projeto 16 - projeto tela de login</a>
 
