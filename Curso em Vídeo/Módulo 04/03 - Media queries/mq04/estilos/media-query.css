@@ -34,7 +34,7 @@ Grandes telas: acima de 1200px
     }
 
     main::after {
-        content: 'Essa impressão foi feita através do site www.juliaboaskivisk.github.io';
+        content: 'Essa impressão foi feita através do site www.github.com/anajulianovais';
     }
     
     img#phone {display: none;}
