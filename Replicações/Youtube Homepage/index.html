@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <title>Youtube Homepage</title>
+
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 250,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo-esquerda">
+            <div class="cabecalho-menu">
+                <span id="pequenomenu" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
+            </div>
+            <a href="index.html"><img src="imagens/youtubelogo.png" alt="YoutubeLogo"></a>
+        </div>
+
+        <form action="#" method="get" class="cabecalho-conteudo-centralizado">
+            <input type="text" name="pesquisa" id="i_pesquisa" placeholder="Pesquisar">
+            <button id="area-de-pesquisa">
+                <span id="btnPesquisar" class="material-symbols-outlined">search</span>
+            </button>
+        </form>
+
+        <div class="cabecalho-conteudo-direita">
+            <a href="#"><span id="btnNotificacoes" class="material-symbols-outlined">notifications</span></a>
+            <a href="#"><img src="imagens/eu.jpg" alt=""></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu-lateral">
+            <a href="#" class="menu-lateral-botoes">
+                <span class="material-symbols-outlined" id="home">Home</span> <br>
+                <p class="legenda">Início</p> 
+            </a>
+
+            <a href="#" class="menu-lateral-botoes">
+                <span class="material-symbols-outlined" id="subscriptions">Subscriptions</span> <br>
+                <p class="legenda">Inscrições</p>
+            </a>
+        </section>
+
+        <section class="categorias">
+            <ul>
+                <li class="categoria-selecionada">Tudo</li>
+                <li class="categorias-nao-selecionadas">Valorant</li>
+                <li class="categorias-nao-selecionadas">Animes</li>
+                <li class="categorias-nao-selecionadas">Finanças</li>
+                <li class="categorias-nao-selecionadas">Opinião</li>
+            </ul>
+        </section>
+
+        <section class="videos">
+            <div class="vd01">
+                <a href="vd01.html">
+                    <img src="imagens/QCK.png" alt="QCK">
+                    <p class="titulo-videos">QCK TESTOU o NOVO PACOTE PRIMORDIUM e ACABOU com as RANKEDS</p>
+                </a>
+                <span class="texto-videos">Fábrica de Ascendentes</span> <br>
+                <span class="texto-videos">5,2 mil visualizações</span> <span class="texto-videos">• há 4 horas</span>
+            </div>
+           
+            <div class="vd02">
+                <a href="vd02.html">
+                    <img src="imagens/dono-da-padaria.png" alt="Dono da padaria chama pra porrada">
+                    <p class="titulo-videos">Dono de Padaria CHAMA CLIENTE pra P0RRADA após DISCUSSÃ0!!</p>
+                </a>
+                <span class="texto-videos">Eu sou seu PAI</span> <br>
+                <span class="texto-videos">15 mil visualizações</span> <span class="texto-videos">• há 1 mês</span>
+            </div>
+           
+            <div class="vd03">
+                <a href="vd03.html">
+                    <img src="imagens/Vinland.png" alt="Vinland">
+                    <p class="titulo-videos">A SEGUNDA TEMPORADA DE VINLAND SAGA FOI BOA?</p>
+                </a>
+                <span class="texto-videos">Inferno de Dante</span> <br>
+                <span class="texto-videos">7,4 mil visualizações</span> <span class="texto-videos">• há 15 horas</span>
+            </div>
+            
+            <div class="vd04">
+                <a href="vd04.html">
+                    <img src="imagens/3-sites.png" alt="3 sites">
+                    <p class="titulo-videos">3 SITES QUE PAGAM ATÉ 20 DÓLARES POR DIA! [R$ 3,027,00 POR MÊS]</p>
+                </a>
+                <span class="texto-videos">Nerds de Negócios</span> <br>
+                <span class="texto-videos">4,6 mi de visualizações</span> <span class="texto-videos">• há 2 anos</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
