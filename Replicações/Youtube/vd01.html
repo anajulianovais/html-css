@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/videos.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>QCK TESTOU o NOVO PACOTE PRIMORDIUM e ACABOU com as RANKEDS</title>
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 250,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body onresize="mudouTamanho()">
+    <div id="overlay"></div>
+
+    <header id="cabecalho" class="flex aligncenter">
+        <div id="cabecalho-esquerda" class="flex aligncenter">
+            <div id="cabecalho-esquerda-menu">
+                <span id="cabecalho-pequenoMenu" class="material-symbols-outlined" onclick="menuContextualLateral()">menu</span>
+            </div>
+            <a href="index.html"><img src="imagens/youtubelogo.png" alt="YoutubeLogo" id="cabecalho-youtubeLogo" class="youtubeLogo"></a>
+            <span id="cabecalho-esquerda-btnVoltar" class="material-symbols-outlined" onclick="voltarConteudo()">arrow_back</span>
+        </div>
+
+        <div id="cabecalho-centro" class="flex">
+            <input type="text" name="pesquisa_" id="cabecalho-centro-txtPesquisa" placeholder="Pesquisar">
+
+            <button id="cabecalho-centro-btnPesquisar" onclick="Pesquisar()">
+                <span id="cabecalho-centro-btnPesquisarIcone" class="material-symbols-outlined">search</span>
+            </button>
+        </div>
+
+        <div id="cabecalho-direita" class="flex ">
+            <a href="#"><span id="cabecalho-direita-btnNotificacoes"
+                    class="material-symbols-outlined">notifications</span></a>
+            <a href="#"><img src="imagens/eu.jpg" alt="" class="eu" id="cabecalho-direita-meuPerfil" onclick="menuContextualConfiguracoes()"></a>
+        </div>
+
+        <div id="menu-contextual-configuracoes">
+            <div id="menu-contextual-configuracoes-coluna01" class="flex">
+                <img src="imagens/eu.jpg" alt="" class="eu">
+
+                <div id="menu-contextual-configuracoes-perfil" class="flex vertical">
+                    <p>&nbsp;Louie</p>
+                    <p>@Boaskivisk</p>
+                    <a href="#" id="menu-contextual-configuracoes-acessarCanal">
+                        <p>Acessar seu canal</p>
+                    </a>
+                </div>
+            </div>
+
+            <div id="menu-contextual-configuracoes-coluna02" class="flex vertical">
+                <a href="#" class="">
+                    <span class="material-symbols-outlined icone">switch_account</span>
+                    <span class="texto-icone">Mudar de conta</span>
+                </a>
+
+                <a href="#" class="">
+                    <span class="material-symbols-outlined icone">logout</span>
+                    <span class="texto-icone">Sair</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="menu-contextual-lateral">
+            <div id="menu-contextual-lateral-coluna01" class="flex aligncenter">
+                <div id="menu-contextual-lateral-menu">
+                    <span id="menu-contextual-lateral-pequenoMenu" class="material-symbols-outlined"
+                        onclick="menuContextualLateral()">menu</span>
+                </div>
+                <a href="index.html"><img src="imagens/youtubelogo.png" alt="YoutubeLogo" id="menu-contextual-lateral-youtubeLogo" class="youtubeLogo"></a>
+            </div>
+
+            <div id="menu-contextual-lateral-coluna02" class="flex vertical">
+                <a href="#" class="menu-contextual-lateral-links flex aligncenter" id="texto-marcado">
+                    <span class="material-symbols-outlined icone">home</span>
+                    <span class="texto-icone">Início</span>
+                </a>
+
+                <a href="#" class="menu-contextual-lateral-links menu-contextual-lateral-botoes flex aligncenter">
+                    <span class="material-symbols-outlined icone">subscriptions</span>
+                    <span class="texto-icone">Inscrições</span>
+                </a>
+            </div>
+
+            <div id="menu-contextual-lateral-coluna03" class="flex vertical">
+                <a href="#" id="voce" class="menu-contextual-lateral-botoes">Você ></a>
+
+                <a href="#" class="menu-contextual-lateral-links menu-contextual-lateral-botoes flex aligncenter">
+                    <span class="material-symbols-outlined icone">account_box</span>
+                    <span class="texto-icone">Seu canal</span>
+                </a>
+
+                <a href="#" class="menu-contextual-lateral-links menu-contextual-lateral-botoes flex aligncenter">
+                    <span class="material-symbols-outlined icone">history</span>
+                    <span class="texto-icone">Histórico</span>
+                </a>
+
+                <a href="#" class="menu-contextual-lateral-links menu-contextual-lateral-botoes flex aligncenter">
+                    <span class="material-symbols-outlined icone menu-contextual-lateral-botoes">playlist_play</span>
+                    <span class="texto-icone">Playlists</span>
+                </a>
+
+                <a href="#" class="menu-contextual-lateral-links menu-contextual-lateral-botoes flex aligncenter">
+                    <span class="material-symbols-outlined icone">slideshow</span>
+                    <span class="texto-icone">Seus vídeos</span>
+                </a>
+
+                <a href="#" class="menu-contextual-lateral-links menu-contextual-lateral-botoes flex aligncenter">
+                    <span class="material-symbols-outlined icone">schedule</span>
+                    <span class="texto-icone">Assistir mais tarde</span>
+                </a>
+
+                <a href="#" class="menu-contextual-lateral-links menu-contextual-lateral-botoes flex aligncenter">
+                    <span class="material-symbols-outlined menu-contextual-lateral-icone">thumb_up</span>
+                    <span class="menu-contextual-lateral-texto-icone">Vídeos com "gostei"</span>
+                </a>
+            </div>
+        </section>
+
+
+        <section id="audiovisual">
+
+            <div id="audiovisual-video">
+                <iframe src="https://www.youtube.com/embed/--yweupv5Ys?si=xGmO74a4X3vqQNWR" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=--yweupv5Ys" target="_blank">
+                <h1 id="audiovisual-video-titulo">QCK TESTOU o NOVO PACOTE PRIMORDIUM e ACABOU com as RANKEDS</h1>
+            </a>
+
+            <div id="audiovisual-acoes" class="flex">
+                <div id="audiovisual-acoes-esquerda" class="flex aligncenter justifycenter">
+                    <a href="https://www.youtube.com/@FabricadeAscendentes" target="_blank">
+                        <img src="imagens/profile01.jpg" alt="">
+                    </a>
+
+                    <div id="audiovisual-acoes-esquerda-informacoes" class="flex vertical">
+                        <a href="https://www.youtube.com/@FabricadeAscendentes" target="_blank">
+                            <span id="audiovisual-acoes-esquerda-canal-yt">Fábrica de Ascendentes</span> <br>
+                        </a>
+                        <span id="audiovisual-acoes-esquerda-qntd-inscritos">1,29 mil inscritos</span>
+                    </div>
+
+                    <button id="audiovisual-acoes-esquerda-btnInscrever">Inscrever-se</button>
+                </div>
+
+                <div id="audiovisual-acoes-direita" class="flex">
+                    <div class="audiovisual-acoes-direita-botoes-avaliacao audiovisual-acoes-direita-botoes flex aligncenter">
+                        <button class="audiovisual-acoes-direita-botoes-like flex aligncenter justifycenter">
+                            <span class="material-symbols-outlined audiovisual-acoes-direita-like-icone">thumb_up</span>
+                            <span class="audiovisual-acoes-direita-qntd-likes">807</span>
+                        </button>
+    
+                        <button class="audiovisual-acoes-direita-botoes-dislike">
+                            <span class="material-symbols-outlined area-de-video-botoes-like-icone">thumb_down</span>
+                        </button>
+                    </div>
+    
+                    <div id="audiovisual-acoes-direita-btnCompartilhar" class="audiovisual-acoes-direita-botoes flex aligncenter">
+                        <button class="audiovisual-acoes-direita-botoes-estilo flex aligncenter justifycenter">
+                            <span class="material-symbols-outlined audiovisual-acoes-direita-like-icone">share</span>
+                            <span class="audiovisual-acoes-direita--informacao">Compartilhar</span>
+                        </button>
+                    </div>
+    
+                    <div id="audiovisual-acoes-direita-btnDownload" class="audiovisual-acoes-direita-botoes flex aligncenter">
+                        <button class="audiovisual-acoes-direita-botoes-estilo flex aligncenter justifycenter">
+                            <span class="material-symbols-outlined audiovisual-acoes-direita-botoes-like-icone">download</span>
+                            <span class="audiovisual-acoes-direita-botoes-informacao">Download</span>
+                        </button>
+                    </div>
+    
+                    <div id="audiovisual-acoes-direita-btnClipar" class="audiovisual-acoes-direita-botoes flex aligncenter">
+                        <button class="audiovisual-acoes-direita-botoes-estilo flex aligncenter justifycenter">
+                            <span class="material-symbols-outlined audiovisual-acoes-direita-botoes-like-icone">cut</span>
+                            <span class="audiovisual-acoes-direita-botoes-informacao">Clipe</span>
+                        </button>
+                    </div>
+    
+                    <div id="audiovisual-acoes-direita-btnMaisAcoes" class="audiovisual-acoes-direita-botoes flex aligncenter"
+                        onclick="mostrarMaisAcoes()">
+                        <button class="audiovisual-acoes-direita-botoes-estilo flex aligncenter justifycenter">
+                            <span class="material-symbols-outlined audiovisual-acoes-direita-botoes-like-icone">more_horiz</span>
+                        </button>
+                    </div>
+    
+                    <div id="audiovisual-acoes-direita-maisAcoes" class="flex vertical">
+                        <a href="#" id="audiovisual-acoes-direita-maisAcoes-btnCompartilhar" class="flex aligncenter">
+                            <span class="material-symbols-outlined icone">share</span>
+                            <span class="texto-icone">Compartilhar</span>
+                        </a>
+    
+                        <a href="#" id="audiovisual-acoes-direita-maisAcoes-btnDownload" class="flex aligncenter">
+                            <span class="material-symbols-outlined icone">download</span>
+                            <span class="texto-icone">Download</span>
+                        </a>
+    
+                        <a href="#" id="audiovisual-acoes-direita-maisAcoes-btnClipar" class="flex aligncenter">
+                            <span class="material-symbols-outlined icone">cut</span>
+                            <span class="texto-icone">Clipar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audiovisual-descricao">
+                <p class="audiovisual-descricao-informacoes">20.378 visualizações 5 de mar. de 2024</p>
+                <p class="audiovisual-descricao-conteudo">
+                    Inscreva-se no canal e ative o sininho para receber as notificações dos nossos vídeos! Trazemos
+                    todos os dias vídeos incríveis de cortes das lives dos streamers. <br>
+                    <br>
+                    Créditos a TWITCH.TV/QCKVAL <br>
+                    <span id='audiovisual-descricao-completa'>
+                        <br>
+                        Loud<br>
+                        loud x sen<br>
+                        qck valorant<br>
+                        qck<br>
+                        novo pacote valorant<br>
+                    </span>
+                </p> <br>
+
+                <p id="audiovisual-descricao-btnExibicaoDescricao" onclick="exibicaoDescricao()">Mostrar mais</p>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="javascript/videos.js"></script>
+</body>
+
+</html>
