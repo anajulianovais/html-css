@@ -301,7 +301,7 @@ main {
 
 #audiovisual-video-titulo {
     margin-top: 5px;
-    font-size: clamp(14px, 1.146vw, 22px);
+    font-size: clamp(12px, 1.146vw, 22px);
     color: black;
 }
 
