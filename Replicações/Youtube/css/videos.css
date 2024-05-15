@@ -200,12 +200,12 @@ main {
 
 /*#region MENU CONTEXTUAL LATERAL */
 
-@keyframes primeiraAnimacao{
+@keyframes abrindoMenuContextualLateral{
     from {left: -200px;}
     to {left: 0px;}
 }
 
-@keyframes segundaAnimacao{
+@keyframes fechandoMenuContextualLateral{
     from {left: 0px;}
     to {left: -200px;}
 }
@@ -226,7 +226,7 @@ main {
     font-size: 12px;
     background-color: white;
     
-    animation-name: primeiraAnimacao;
+    animation-name: abrindoMenuContextualLateral;
     animation-duration: 200ms;
     
     display: none;
@@ -255,8 +255,6 @@ main {
 #menu-contextual-lateral-coluna03 {
     padding-top: 10px;
 }
-
-
 
 #voce {
     border-radius: 5px;

@@ -10,7 +10,7 @@ let varMenuContextualLateral = document.getElementById('menu-contextual-lateral'
 let varMenuContextualConfiguracoes = document.getElementById('menu-contextual-configuracoes')
 let meuPerfil = document.getElementById('cabecalho-direita-meuPerfil')
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
     let target = event.target
     if (!varMenuContextualConfiguracoes.contains(target) && !meuPerfil.contains(target)) {
         varMenuContextualConfiguracoes.style.display = 'none'
@@ -23,33 +23,39 @@ document.addEventListener("click", function(event) {
 })
 
 
-function abrirMenuContextualLateral() {
+function menuContextualLateral() {
+    let visibilidade = varMenuContextualLateral.style.display
+    if (visibilidade == 'none' || visibilidade == '') {
         varMenuContextualLateral.style.left = '0px'
-        varMenuContextualLateral.style.animationName = 'primeiraAnimacao'
+        varMenuContextualLateral.style.animationName = 'abrindoMenuContextualLateral'
         varMenuContextualLateral.style.display = 'block'
         if (window.innerWidth <= 500) {
             cabecalho_esquerda.style.visibility = 'hidden'
         }
+    }
+
+    else {
+        varMenuContextualLateral.style.animationName = 'fechandoMenuContextualLateral'
+        varMenuContextualLateral.style.left = '-200px'
+        setTimeout(function () {
+            varMenuContextualLateral.style.display = 'none'
+        }, 200)
+        cabecalho_esquerda.style.visibility = 'visible'
+    }
 }
 
-function fecharMenuContextualLateral() {
-    varMenuContextualLateral.style.animationName = 'segundaAnimacao'
-    varMenuContextualLateral.style.left = '-200px'
-    cabecalho_esquerda.style.visibility = 'visible'
-}
-
-function menuContextualConfiguracoes(){
+function menuContextualConfiguracoes() {
     let visibilidade = varMenuContextualConfiguracoes.style.display
     let posicao = meuPerfil.getBoundingClientRect()
 
-        if (visibilidade == "none" || visibilidade == '') {
-            varMenuContextualConfiguracoes.style.left = `${posicao.left - 265}px`
-            varMenuContextualConfiguracoes.style.display = 'block'
-        }
+    if (visibilidade == "none" || visibilidade == '') {
+        varMenuContextualConfiguracoes.style.left = `${posicao.left - 265}px`
+        varMenuContextualConfiguracoes.style.display = 'block'
+    }
 
-        else {
-            varMenuContextualConfiguracoes.style.display = 'none'
-        }
+    else {
+        varMenuContextualConfiguracoes.style.display = 'none'
+    }
 }
 
 function Pesquisar() {
@@ -75,35 +81,35 @@ function Pesquisar() {
 }
 
 function voltarConteudo() {
-        if (window.innerWidth <= 500) {
-            cabecalho_esquerda.style.visibility = 'visible'
-            cabecalhoMenu.style.visibility = 'visible'
-            youtubeLogo.style.display = ''
-            btnVoltar.style.display = 'none'
-            meuPerfil.style.visibility = 'visible'
-            txtPesquisa.style.display = 'none'
-            txtPesquisa.value = ''
-        } else {
-            cabecalho_esquerda.style.visibility = 'visible'
-            cabecalhoMenu.style.visibility = 'visible'
-            youtubeLogo.style.display = ''
-            btnVoltar.style.display = 'none'
-            meuPerfil.style.visibility = 'visible'
-            txtPesquisa.style.display = 'block'
-        }
+    if (window.innerWidth <= 500) {
+        cabecalho_esquerda.style.visibility = 'visible'
+        cabecalhoMenu.style.visibility = 'visible'
+        youtubeLogo.style.display = ''
+        btnVoltar.style.display = 'none'
+        meuPerfil.style.visibility = 'visible'
+        txtPesquisa.style.display = 'none'
+        txtPesquisa.value = ''
+    } else {
+        cabecalho_esquerda.style.visibility = 'visible'
+        cabecalhoMenu.style.visibility = 'visible'
+        youtubeLogo.style.display = ''
+        btnVoltar.style.display = 'none'
+        meuPerfil.style.visibility = 'visible'
+        txtPesquisa.style.display = 'block'
+    }
 
-        if (modoPesquisa == 1 && window.innerWidth >= 500) {
-            txtPesquisa.value = ''
-        }
-        
-        modoPesquisa = 0  
+    if (modoPesquisa == 1 && window.innerWidth >= 500) {
+        txtPesquisa.value = ''
+    }
+
+    modoPesquisa = 0
 }
 
 
 function mudouTamanho() {
     voltarConteudo()
-    let posicao = varMenuContextualLateral.style.left
-    if (window.innerWidth <= 547 && posicao == "0px") {
+    let visibilidade = varMenuContextualLateral.style.display
+    if (window.innerWidth <= 500 && visibilidade == "block") {
         cabecalho_esquerda.style.visibility = 'hidden'
     }
 

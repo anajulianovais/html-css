@@ -80,21 +80,29 @@ function voltarConteudo() {
         modoPesquisa = 0  
 }
 
-function abrirMenuContextualLateral() {
-        varMenuContextualLateral.style.left = '0px'
-        varMenuContextualLateral.style.animationName = 'primeiraAnimacao'
-        varMenuContextualLateral.style.display = 'block'
-        overlay.style.visibility = 'visible'
-        if (window.innerWidth <= 547) {
-            cabecalho_esquerda.style.visibility = 'hidden'
+function menuContextualLateral() {
+        let visibilidade = varMenuContextualLateral.style.display
+     
+        if (visibilidade == 'none' || visibilidade == '') {
+            varMenuContextualLateral.style.left = '0px'
+            varMenuContextualLateral.style.display = 'block'
+            varMenuContextualLateral.style.animationName = 'abrindoMenuContextualLateral'
+            overlay.style.visibility = 'visible'
+            if (window.innerWidth <= 547) {
+                cabecalho_esquerda.style.visibility = 'hidden'
+            }
         }
-}
 
-function fecharMenuContextualLateral() {
-    varMenuContextualLateral.style.animationName = 'segundaAnimacao'
-    varMenuContextualLateral.style.left = '-200px'
-    overlay.style.visibility = 'hidden'
-    cabecalho_esquerda.style.visibility = 'visible'
+        else {
+            varMenuContextualLateral.style.animationName = 'fechandoMenuContextualLateral'
+            varMenuContextualLateral.style.left = '-200px'
+            setTimeout(function() {
+                varMenuContextualLateral.style.display = 'none'
+            }, 200)
+            overlay.style.visibility = 'hidden'
+            cabecalho_esquerda.style.visibility = 'visible'
+        }
+       
 }
 
 function menuContextualConfiguracoes() {
@@ -144,9 +152,9 @@ function exibicaoDescricao() {
 
 function mudouTamanho() {
     voltarConteudo()
-    let posicao = varMenuContextualLateral.style.left
+    let visibilidade = varMenuContextualLateral.style.display
 
-    if (window.innerWidth <= 547 && posicao == "0px") {
+    if (window.innerWidth <= 547 && visibilidade == "block") {
         cabecalho_esquerda.style.visibility = 'hidden'
     }
 
