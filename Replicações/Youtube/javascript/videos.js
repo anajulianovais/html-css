@@ -23,7 +23,11 @@ document.addEventListener("click", function (event) {
     }
 
     if (!varMenuContextualLateral.contains(target) && !cabecalhoMenu.contains(target)) {
-        varMenuContextualLateral.style.display = 'none'
+        varMenuContextualLateral.style.animationName = 'fechandoMenuContextualLateral'
+        varMenuContextualLateral.style.left = '-200px'
+        setTimeout(function() {
+            varMenuContextualLateral.style.display = 'none'
+        }, 200)
         overlay.style.visibility = 'hidden'
         cabecalho_esquerda.style.visibility = 'visible'
     }
