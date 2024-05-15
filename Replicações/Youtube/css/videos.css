@@ -496,7 +496,7 @@ main {
     }
 }
 
-@media screen and (min-width: 547px) and (max-width: 940px) {
+@media screen and (min-width: 547px) and (max-width: 1012px) {
     #audiovisual-acoes-esquerda {
         margin-right: auto;
     }
