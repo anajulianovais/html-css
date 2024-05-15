@@ -17,25 +17,25 @@ document.addEventListener("click", function(event) {
     }
 
     if (!varMenuContextualLateral.contains(target) && !cabecalhoMenu.contains(target)) {
-        varMenuContextualLateral.style.visibility = 'hidden'
+        varMenuContextualLateral.style.display = 'none'
         cabecalho_esquerda.style.visibility = 'visible'
     }
 })
 
-function menuContextualLateral(){
-    let visibilidade = varMenuContextualLateral.style.visibility
 
-    if (visibilidade == "hidden" || visibilidade == '') {
-        varMenuContextualLateral.style.visibility = 'visible'
+function abrirMenuContextualLateral() {
+        varMenuContextualLateral.style.left = '0px'
+        varMenuContextualLateral.style.animationName = 'primeiraAnimacao'
+        varMenuContextualLateral.style.display = 'block'
         if (window.innerWidth <= 500) {
             cabecalho_esquerda.style.visibility = 'hidden'
         }
-    }
+}
 
-    else {
-        varMenuContextualLateral.style.visibility = 'hidden'
-        cabecalho_esquerda.style.visibility = 'visible'
-    }
+function fecharMenuContextualLateral() {
+    varMenuContextualLateral.style.animationName = 'segundaAnimacao'
+    varMenuContextualLateral.style.left = '-200px'
+    cabecalho_esquerda.style.visibility = 'visible'
 }
 
 function menuContextualConfiguracoes(){
@@ -102,8 +102,8 @@ function voltarConteudo() {
 
 function mudouTamanho() {
     voltarConteudo()
-    let visibilidade = varMenuContextualLateral.style.visibility
-    if (window.innerWidth <= 500 && visibilidade == "visible") {
+    let posicao = varMenuContextualLateral.style.left
+    if (window.innerWidth <= 547 && posicao == "0px") {
         cabecalho_esquerda.style.visibility = 'hidden'
     }
 
